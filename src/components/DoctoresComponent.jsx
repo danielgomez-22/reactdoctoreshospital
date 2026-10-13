@@ -18,6 +18,11 @@ export default class DoctoresComponent extends Component {
             })
         })
     }
+    DetallesDoctor = (event) => {
+        event.preventDefault();
+        // Lógica para mostrar detalles del doctor
+        console.log('funcionando');
+    }
 
     componentDidMount = () => {
         this.loadDoctoresHospital();
@@ -39,7 +44,8 @@ export default class DoctoresComponent extends Component {
                             <th>Apellido</th> 
                             <th>Especialidad</th>
                             <th>Salario</th>
-                            <th>Hospital</th>  
+                            <th>Hospital</th>
+                            <th>Detalles</th>  
                         </tr>
                     </thead>
                     <tbody>
@@ -50,11 +56,15 @@ export default class DoctoresComponent extends Component {
                                     <td>{doctor.especialidad}</td>
                                     <td>{doctor.salario}</td>
                                     <td>{doctor.idHospital}</td>
+                                    <td><button className="btn btn-danger" onClick={this.DetallesDoctor}>Detalles Doctor</button></td>
                                 </tr>
                             )
                         })}
                     </tbody>
                 </table>
+
+                <h3>Detalles del Doctor</h3>
+                
             </div>
         )
     }
