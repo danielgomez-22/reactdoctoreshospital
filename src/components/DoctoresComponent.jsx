@@ -61,7 +61,7 @@ export default class DoctoresComponent extends Component {
                                         })  
                                     }}>
                                         Details
-                                    </button>
+                                    </button>ºº
                                 </td>
                                 <td>{doc.apellido}</td>
                                 <td>{doc.especialidad}</td>

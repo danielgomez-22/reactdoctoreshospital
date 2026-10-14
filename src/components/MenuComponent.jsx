@@ -40,6 +40,9 @@ export default class MenuComponent extends Component {
                     <li className="nav-item">
                     <NavLink className="nav-link" to="/doctores/1">Doctores</NavLink>
                     </li>
+                     <li className="nav-item">
+                    <NavLink className="nav-link" to="/createhospital">New Hospital</NavLink>
+                    </li>
                     <li className="nav-item dropdown">
                     <a className="nav-link dropdown-toggle" to="/hospitales" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Hospitales
@@ -55,6 +58,9 @@ export default class MenuComponent extends Component {
                             })
                         }
                     </ul>
+                    </li>
+                    <li className="nav-item">
+                    <NavLink className="nav-link" to="/hospitales">Lista Hospitales</NavLink>
                     </li>
                     <li className="nav-item">
                     <a className="nav-link disabled" aria-disabled="true">Disabled</a>
